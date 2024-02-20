@@ -6,7 +6,6 @@ type TProps = {
 	readonly text: string;
 	readonly backgroundColor: string;
 	readonly disabled?: boolean;
-	readonly className?: string;
 	readonly onClick?: VoidFunction;
 };
 
