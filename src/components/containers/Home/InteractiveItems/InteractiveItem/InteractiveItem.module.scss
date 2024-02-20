@@ -1,0 +1,23 @@
+@use 'sass:map';
+
+@use '@/styles/variables.module.scss';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: map.get(variables.$sizes, spacing-m);
+	border-radius: 5px;
+	border: 2px solid map.get(variables.$colors, border-black);
+
+	&__name {
+		font-size: 1.5rem;
+		color: map.get(variables.$sizes, text-black);
+	}
+
+	&__counter {
+		color: map.get(variables.$sizes, text-black);
+		font-size: 1.4rem;
+		margin-block: map.get(variables.$sizes, spacing-s);
+	}
+}

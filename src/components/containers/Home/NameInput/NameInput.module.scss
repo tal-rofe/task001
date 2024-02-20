@@ -1,0 +1,22 @@
+@use 'sass:map';
+
+@use '@/styles/variables.module.scss';
+
+.container {
+	display: flex;
+	align-items: center;
+
+	&__label {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	&__input {
+		color: map.get(variables.$colors, text-black);
+		width: 200px;
+		border: 2px solid map.get(variables.$colors, border-black);
+		border-radius: 5px;
+		padding: map.get(variables.$sizes, spacing-s);
+		margin-inline: map.get(variables.$sizes, spacing-m);
+	}
+}

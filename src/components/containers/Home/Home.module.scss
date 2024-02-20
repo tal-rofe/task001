@@ -1,0 +1,21 @@
+@use 'sass:map';
+
+@use '@/styles/variables.module.scss';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid map.get(variables.$colors, border-blue);
+	height: auto;
+	padding: map.get(variables.$sizes, spacing-l);
+	border-radius: 5px;
+	width: 80vw;
+	max-height: 80vh;
+
+	&__divider {
+		width: 95%;
+		height: 2px;
+		background-color: map.get(variables.$colors, border-blue);
+		margin-block: map.get(variables.$sizes, spacing-l);
+	}
+}

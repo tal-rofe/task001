@@ -1,0 +1,15 @@
+$colors: (
+	text-black: #1c1a1a,
+	border-blue: #1975d1,
+	border-black: #1c1a1a,
+	add-button-background: #1975d1,
+	increment-button-background: #047410,
+	text-white: #e7e7e7,
+	button-disabled-background: #f22d2d,
+);
+
+:export {
+	@each $key, $value in $colors {
+		#{unquote($key)}: $value;
+	}
+}

@@ -1,0 +1,17 @@
+@use 'sass:map';
+
+@use '@/styles/variables.module.scss';
+
+.button {
+	color: map.get(variables.$colors, text-white);
+	border-radius: 5px;
+	padding: map.get(variables.$sizes, spacing-s) map.get(variables.$sizes, spacing-xl);
+	font-size: 1.4rem;
+	height: 100%;
+	font-weight: bold;
+
+	&:disabled {
+		background-color: map.get(variables.$colors, button-disabled-background) !important;
+		opacity: 0.3;
+	}
+}
